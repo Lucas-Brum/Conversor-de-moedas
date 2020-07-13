@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title> Conversor </title>
+</head>
+<body>
+  <header>
+    <h1>
+      Conversor de Real em outras moedas
+    </h1>
+  </header>
+  <section>
+    <div>
+      <span>Converter de Reais:</span>
+      <input  id = "money" type="number" min = "0">  
+    </div>
+    <div class="converterPara">
+      <span class = "to">Para:</span>
+      <select name="moneyTo" id="moneyTo">
+        <option value="ARS">Peso Argentino</option>
+        <option value="AUD">Dólar Australiano</option>
+        <option value="BTC">Bitcoin</option>
+        <option value="CAD">Dólar Canadense</option>
+        <option value="CHF">Franco Suíço</option>
+        <option value="CNY">Yuan Chinês</option>
+        <option value="ETH">Ethereum</option>
+        <option value="EUR">Euro</option>
+        <option value="GBP">Libra Esterlina</option>
+        <option value="ILS">Novo Shel Israelense</option>
+        <option value="JPY">Iene Japonês</option>
+        <option value="LTC">Litecoin</option>
+        <option value="USD">Dólar Comercial</option>
+        <option value="USDT">Dólar Turismo</option>
+        <option value="XRP">Riple</option>
+      </select>
+      <button id = "toConvert">Converter</button>
+      <p class="results" id = "results">0</p>
+    </div>
+  </section>
+  <footer>
+    <p>Conversor de moedas alimentado atravez de <a href = "https://docs.awesomeapi.com.br/api-de-moedas">awesomeapi</a>, e desenvolvido por <a href="https://lucas-brum.github.io/LucasBrum/">Lucas Brum</a>.  </p>
+  </footer>
+  
+  
+  <script src="/Scripts/main.js"></script>
+</body>
+</html>
