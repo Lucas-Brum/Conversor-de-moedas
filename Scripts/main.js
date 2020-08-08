@@ -3,7 +3,7 @@ let value = document.getElementById('money')
 let moneyTo = document.getElementById('moneyTo')
 
 let convertButton = document.getElementById('toConvert')
-
+let test
 let convertionResults = document.getElementById('results')
 let cachorro
 
