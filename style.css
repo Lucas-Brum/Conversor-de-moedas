@@ -25,9 +25,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -44,15 +42,56 @@ table {
 	border-spacing: 0;
 }
 /*Minhas configuraçõs CSS*/
-/*MOBILE*/
-body{
-  background:whitesmoke;
+body {
+  line-height: 1;
+  background: whitesmoke;
+  font-family: 'Rowdies', cursive;
 }
 header,section,footer{
+  color: blue;
   text-align: center;
-  background: rgb(204, 201, 201);
-  border: 1px solid darkorange;
+  background: white;
+  box-shadow: 1px 1px 1px 1px gray;
+ 
 }
+header,footer{
+  padding: 1%
+}
+section{
+  border-radius: 10%;
+}
+.inp{
+  border: 1px solid blue;
+}
+input[type=number] {
+  color: blue;
+}
+select {
+  color: blue;
+  border: 1px solid blue;
+}
+.btn {
+
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  cursor: pointer; 
+}
+.btn-blue{
+  background: rgb(0, 0, 255)  ;
+  color: white;
+  box-shadow: 0 5px gray;
+
+}
+.btn-blue:active{
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
+
+
+/*MOBILE*/
 @media(max-width : 600px){
   header{
     margin-top: 7%;
@@ -64,11 +103,11 @@ header,section,footer{
 
   }
   section{
-    margin-top: 20%;
+    margin-top: 14%;
     margin-right: 10%;
     margin-left: 10%;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 15%;
+    padding-bottom: 25%;
     height: 10vh;
     text-align: center;
    
@@ -76,14 +115,27 @@ header,section,footer{
   section .results,section .converterPara{
     padding-top: 2%;
   }
+
+
+
+  .btn {
+    font-size:10px;
+    text-transform: uppercase;
+    padding:5px;
+    margin-top: 5px; 
+  }
+  
+
+
   footer{
-    margin-top: 25%;
+    margin-top: 10%;
     margin-left: 5%;
     margin-right: 5%;
     padding-bottom: 1%;
 
   }
 }
+
 /*Desktop*/
 @media(min-width:601px){
   header{
@@ -93,15 +145,35 @@ header,section,footer{
     
   }
   section{
-    margin-top: 10%;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
     height: 30vh;
-    padding-top: 10%;
+    padding-top: 5%;
 
   }
   section .results,section .converterPara{
     padding-top: 2%;
+  }
+  .inp{
+    padding: 10px;
+    
+  }
+  input[type=number] {
+    font-size: 20px;
+  }
+  select {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .btn {
+    font-size:20px;
+    padding:10px;
+  }
+  .btn-blue:hover{
+    background:rgb(0, 0, 109);
+    color:white;
+    box-shadow: 0 5px 0 rgb(37, 37, 37);
   }
   footer{
     margin-top: 7%;
