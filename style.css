@@ -45,10 +45,10 @@ table {
 body {
   line-height: 1;
   background: whitesmoke;
-  font-family: 'Rowdies', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 header,section,footer{
-  color: blue;
+  color: black;
   text-align: center;
   background: white;
   box-shadow: 1px 1px 1px 1px gray;
@@ -57,9 +57,7 @@ header,section,footer{
 header,footer{
   padding: 1%
 }
-section{
-  border-radius: 10%;
-}
+
 .inp{
   border: 1px solid blue;
 }
@@ -115,8 +113,10 @@ select {
   section .results,section .converterPara{
     padding-top: 2%;
   }
-
-
+  
+  section{
+    border-radius: 10%;
+  }
 
   .btn {
     font-size:10px;
